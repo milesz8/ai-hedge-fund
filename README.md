@@ -49,12 +49,21 @@ cd ai-hedge-fund
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 
+Note: If the `poetry` command isn't found after installation, you may need to add Poetry's bin directory to your PATH:
+```bash
+# Add this line to your shell's config file (~/.zshrc, ~/.bashrc, etc.)
+export PATH="$HOME/.local/bin:$PATH"
+
+# Then reload your shell configuration
+source ~/.zshrc  # or source ~/.bashrc
+```
+
 2. Install dependencies:
 ```bash
 poetry install
 ```
 
-3. Set up your environment variables:
+4. Set up your environment variables:
 ```bash
 # Create .env file for your API keys
 cp .env.example .env
