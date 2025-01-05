@@ -63,7 +63,7 @@ source ~/.zshrc  # or source ~/.bashrc
 poetry install
 ```
 
-4. Set up your environment variables:
+3. Set up your environment variables:
 ```bash
 # Create .env file for your API keys
 cp .env.example .env
