@@ -51,11 +51,11 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 Note: If the `poetry` command isn't found after installation, you may need to add Poetry's bin directory to your PATH:
 ```bash
-# Add this line to your shell's config file (~/.zshrc, ~/.bashrc, etc.)
-export PATH="$HOME/.local/bin:$PATH"
+# For zsh users:
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 
-# Then reload your shell configuration
-source ~/.zshrc  # or source ~/.bashrc
+# For bash users:
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 ```
 
 2. Install dependencies:
